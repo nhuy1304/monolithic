@@ -1,0 +1,26 @@
+{
+  "name": "monolithic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "prisma skills sync || exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@prisma/orm-postgres": "^8.0.0-rc.12",
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "temporal-polyfill": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "prisma": "^8.0.0-rc.17"
+  }
+}
